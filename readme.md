@@ -1,13 +1,13 @@
-- ¿Qué comando utilizaste en el paso 11? ¿Por qué? 
-- ¿Qué comando o comandos utilizaste en el paso 12? ¿Por qué? 
-- El merge del paso 13, ¿Causó algún conﬂicto? ¿Por qué? 
-- El merge del paso 19, ¿Causó algún conﬂicto? ¿Por qué? 
-- El merge del paso 21, ¿Causó algún conﬂicto? ¿Por qué? 
-- ¿Qué comando o comandos utilizaste en el paso 25? 
-- El merge del paso 26, ¿Podría ser fast forward? ¿Por qué? 
-- ¿Qué comando o comandos utilizaste en el paso 27? 
-- ¿Qué comando o comandos utilizaste en el paso 28? 
-- ¿Qué comando o comandos utilizaste en el paso 29? 
-- ¿Qué comando o comandos utilizaste en el paso 30? 
-- ¿Qué comando o comandos usaste en el paso 32? 
-- ¿Qué comando o comandos usaste en el punto 33?
+- ¿Qué comando utilizaste en el paso 11? ¿Por qué? `git reset --hard HEAD~1`. Porque es el comando que resetea a un commit anterior con el `HEAD~1` y destruye los cambios en el working copy con la opción `--hard`.
+- ¿Qué comando o comandos utilizaste en el paso 12? ¿Por qué? `git pull`. Porque tenemos los commits que hicimos en el repositorio remoto y por tanto podemos descargarlos con `git pull`.
+- El merge del paso 13, ¿Causó algún conﬂicto? ¿Por qué? No, no causó ningún conflicto. Porque está actualizada ya que no hicimos ningún cambio en master.
+- El merge del paso 19, ¿Causó algún conﬂicto? ¿Por qué? Sí, causó algún conflicto. En la rama `styled` editamos el fichero `git-nuestro.md` e hicimos commit, al igual que en la rama `htmlify` y git quiere saber si queremos mantener uno o el otro o una mezcla.   
+- El merge del paso 21, ¿Causó algún conﬂicto? ¿Por qué? No, no causó ningún conflicto. Porque desde el momento de la creación de la rama `styled` no ha habido ningún cambio en `master`.
+- ¿Qué comando o comandos utilizaste en el paso 25? `gitk`
+- El merge del paso 26, ¿Podría ser fast forward? ¿Por qué? Sí, porque hay un commit nuevo.
+- ¿Qué comando o comandos utilizaste en el paso 27? `git reset --soft HEAD~1`
+- ¿Qué comando o comandos utilizaste en el paso 28? `git reset HEAD git-nuestro.md` y `git checkout .` 
+- ¿Qué comando o comandos utilizaste en el paso 29? `git branch -d title`
+- ¿Qué comando o comandos utilizaste en el paso 30? `git pull` 
+- ¿Qué comando o comandos usaste en el paso 32? `git checkout 5ee832105c34f3f591d1e5cd2f937617726616c7`
+- ¿Qué comando o comandos usaste en el punto 33? `git checkout master` 
